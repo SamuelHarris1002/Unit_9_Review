@@ -47,8 +47,20 @@
          values are marked by an asterisk (*). If you
          want to place your order over the phone, call us at
          <a href="tel:+13865557499">(386) 555-7499</a>.</p>
-         <form action="http://www.example.com/redball/customer">
-         
+         <form id="form" action="http://www.example.com/redball/customer" method="post">
+            <fieldset id="custInfo"
+            <div class="formRow">
+               <label for="State">Name</label> 
+               <input name="custName" id="Name" type="text" placeholder="First and Last Name">
+            </div>
+            <div class="formWeb">
+               <label for="phone">Phone*</label>
+               <input name="custPhone" pattern="^\d{10}$|^(\(|d{3}[\s-]?\d{4}$" id="Phone" type="phone" placeholder="(nnn) nnn-nnnn">
+            </div>
+            <div class="formweb">
+               <input 
+               <label id="Delivery"
+            </div>
          </form>
          
          
