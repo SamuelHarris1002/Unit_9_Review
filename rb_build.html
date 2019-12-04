@@ -54,9 +54,9 @@
             <label for="sizeBox">Pizza Size</label>
             <input id="sizeBox" name="pizzaSize" type="range" value="14" min="10" max="16" step="2" />
          </div>
-         <div>
+         <div class="formRow">
             <label for="crustBox">Pizza Crust</label>
-            <input name="pizzaCrust" id="crustBox">
+            <select name="pizzaCrust" id="crustBox">
             <option value="Thin">Thin</option>
             <option value="Thick">Thick</option>
             <option value="Stuffed">Stuffed</option>
@@ -64,9 +64,9 @@
          </div>
          <div>
             <input id="cheeseBox" type="checkBox">
-            <label for="cheeseBox">Double Cheese</label>
+            <label for="cheeseBox" type="checkbox">Double Cheese</label>
             <input id="sauceBox" type="checkBox">
-            <label for="sauceBox">Double Sauce</label>
+            <label for="sauceBox" type="checkbox">Double Sauce</label>
          </div>
          <fieldset>
             <legend>Meat Toppings</legend>
@@ -75,7 +75,7 @@
                <img src="rb_full.png" alt="full"/>
                <img src="rb_right.png" alt="right"/>
                <img src="rb_left.png" alt="left"/>
-               <img src="rb_none.png" alt="none"/>
+               <img src="rb_none.png" alt="none" checked/>
             </div>
             <div>
                <label form="">Pepperoni</label>
@@ -83,6 +83,12 @@
                <option value="right">Right</option>
                <option value="left">Left</option>
                <option value="none">None</option>
+            </div>
+            <div>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
+               <option value=""></option>
             </div>
          </fieldset>
          </form>
