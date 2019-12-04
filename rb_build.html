@@ -19,6 +19,8 @@
    <title>Red Ball Pizza Build a Pizza</title>
    <link href="rb_base.css" rel="stylesheet" />
    <link href="rb_styles2.css" rel="stylesheet" />
+   <link href="rb_forms.css" rel="stylesheet" />
+   <script src="rb_formsubmit2.js"></script>
 </head>
 
 <body>
@@ -42,7 +44,48 @@
          by selecting from the ingredients below. You can divide your pizza
          into two regions to give your friends a wide choice of toppings
          and flavors.</p>
-         
+         <form id="form" action="http://www/example.com/redball/build" method="post">
+         <div>
+            <label for="quantityBox">Quanity</label>
+            <input name="quantityBox" id="pizzaQuanity" type="number" value="1"  min="1" max="10" />
+         </div>
+         <div>
+            <img src="rb_sizes.png">
+            <label for="sizeBox">Pizza Size</label>
+            <input id="sizeBox" name="pizzaSize" type="range" value="14" min="10" max="16" step="2" />
+         </div>
+         <div>
+            <label for="crustBox">Pizza Crust</label>
+            <input name="pizzaCrust" id="crustBox">
+            <option value="Thin">Thin</option>
+            <option value="Thick">Thick</option>
+            <option value="Stuffed">Stuffed</option>
+            <option value="Pan">Pan</option>
+         </div>
+         <div>
+            <input id="cheeseBox" type="checkBox">
+            <label for="cheeseBox">Double Cheese</label>
+            <input id="sauceBox" type="checkBox">
+            <label for="sauceBox">Double Sauce</label>
+         </div>
+         <fieldset>
+            <legend>Meat Toppings</legend>
+            <div>
+               <label>Location</label>
+               <img src="rb_full.png" alt="full"/>
+               <img src="rb_right.png" alt="right"/>
+               <img src="rb_left.png" alt="left"/>
+               <img src="rb_none.png" alt="none"/>
+            </div>
+            <div>
+               <label form="">Pepperoni</label>
+               <option value="full">Full</option>
+               <option value="right">Right</option>
+               <option value="left">Left</option>
+               <option value="none">None</option>
+            </div>
+         </fieldset>
+         </form>
    </section>
 
    <footer>

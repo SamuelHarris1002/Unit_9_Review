@@ -48,22 +48,33 @@
          want to place your order over the phone, call us at
          <a href="tel:+13865557499">(386) 555-7499</a>.</p>
          <form id="form" action="http://www.example.com/redball/customer" method="post">
-            <fieldset id="custInfo"
             <div class="formRow">
-               <label for="State">Name</label> 
-               <input name="custName" id="Name" type="text" placeholder="First and Last Name">
+               <label for="State">Name*</label> 
+               <input name="custName" id="nameBox" type="text" placeholder="First and Last Name" required>
             </div>
             <div class="formWeb">
                <label for="phone">Phone*</label>
-               <input name="custPhone" pattern="^\d{10}$|^(\(|d{3}[\s-]?\d{4}$" id="Phone" type="phone" placeholder="(nnn) nnn-nnnn">
+               <input name="custPhone" pattern="^\d{10}$|^(\(|d{3}[\s-]?\d{4}$" id="phoneBox" type="phone" placeholder="(nnn) nnn-nnnn" required>
             </div>
             <div class="formweb">
-               <input 
-               <label id="Delivery"
+                  <input name="orderType" id="delivery" type="radio" checked><label for="delivery">Delivery</label> 
+                  <input name="orderType" id="pickup" type="radio"><label for="pickup">Pickup</label>
             </div>
-         </form>
-         
-         
+            <fieldset id="deliveryInfo">
+               <legend>Delivery Options</legend>
+               <textarea id="addressBox" name="delAddress" placeholder="Enter delivery address">Enter delivery address</textarea>
+               <label for="delBox" >Delivery Time(Leave blank for earliest delivery)</label>
+               <input id="delBox" name="delTime" type="time">
+            </fieldset>
+         <fieldset id="pickupInfo">
+            <legend>Pickup Orders</legend>
+            <label for="pickupBox">Pickup Time (Leave Blank for earliest pickup)</label>
+            <input id="pickupBox" name="pickupTime" disabled type="time">
+         </fieldset>
+         <div>
+            <input type="submit" value="Begin Building your Order">
+         </div>
+      </form>
    </section>
 
    <footer>
