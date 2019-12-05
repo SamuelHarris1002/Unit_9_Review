@@ -19,7 +19,7 @@
    <title>Red Ball Pizza Build a Pizza</title>
    <link href="rb_base.css" rel="stylesheet" />
    <link href="rb_styles2.css" rel="stylesheet" />
-   <link href="rb_forms.css" rel="stylesheet" />
+   <link href="rb_forms2.css" rel="stylesheet" />
    <script src="rb_formsubmit2.js"></script>
 </head>
 
@@ -63,12 +63,12 @@
             <option value="Pan">Pan</option>
          </div>
          <div>
-            <input id="cheeseBox" type="checkBox">
-            <label for="cheeseBox" type="checkbox">Double Cheese</label>
-            <input id="sauceBox" type="checkBox">
-            <label for="sauceBox" type="checkbox">Double Sauce</label>
+            <input for="cheeseBox" type="checkBox">
+            <label id="cheeseBox" type="checkbox">Double Cheese</label>
+            <input  for="sauceBox" type="checkBox">
+            <label id="sauceBox" type="checkbox">Double Sauce</label>
          </div>
-         <fieldset>
+         <fieldset id>
             <legend>Meat Toppings</legend>
             <div>
                <label>Location</label>
@@ -79,31 +79,88 @@
             </div>
             <div>
                <label form="">Pepperoni</label>
-               <option value="full">Full</option>
-               <input name="custFull">
-               <option value="right">Right</option>
-               <option value="left">Left</option>
-               <option value="none" checked>None</option>
+               <input type="radio">
+               <input type="radio">
+               <input type="radio">
+               <input  type="radio">
             </div>
             <div>
-                  <option value="ham">Ham</option>
-                  <option value="pork">Pork</option>
-                  <option value="sausage">Sausage</option>
-                  <option value="chicken fields">Chicken Fields</option>
+                  <label form="">Ham</label>
+               <input type="radio">
+               <input type="radio">
+               <input type="radio">
+               <input  type="radio">
+            </div>
+            <div>
+                  <label form="">Pork</label>
+               <input type="radio">
+               <input type="radio">
+               <input type="radio">
+               <input  type="radio">
+            </div>
+            <div>
+                  <label form="">Sausage</label>
+               <input type="radio">
+               <input type="radio">
+               <input type="radio">
+               <input  type="radio">
+            </div>
+            <div>
+                  <label form="">Chicken</label>
+               <input type="radio">
+               <input type="radio">
+               <input type="radio">
+               <input  type="radio">
             </div>
          </fieldset>
          <fieldset>
             <div>
-               <label>Vegetable Toppings</label>
-               <option value="mushrooms">Mushrooms</option>
-               <option value="peppers">Peppers</option>
-               <option value="onions">Onions</option>
-               <option value="tomatoes">Tomatoes</option>
-               <option value="jalapenos fields">Jalapenos Fields</option>
+               <legend>Vegetable Toppings</legend>
+               <label>Location</label>
+               <img src="rb_full.png" alt="full"/>
+               <img src="rb_right.png" alt="right"/>
+               <img src="rb_left.png" alt="left"/>
+               <img src="rb_none.png" alt="none" checked/>
+            </div>
+            <div>
+               <label form="">Mushrooms</label>
+               <input type="radio">
+               <input type="radio">
+               <input type="radio">
+               <input  type="radio">
+            </div>
+            <div>
+                  <label form="">Green Peppers</label>
+               <input type="radio">
+               <input type="radio">
+               <input type="radio">
+               <input  type="radio">
+            </div>
+            <div>
+                  <label form="">Onions</label>
+               <input type="radio">
+               <input type="radio">
+               <input type="radio">
+               <input  type="radio">
+            </div>
+            <div>
+                  <label form="">Tomatoes</label>
+               <input type="radio">
+               <input type="radio">
+               <input type="radio">
+               <input  type="radio">
+            </div>
+            <div>
+                  <label form="">Jalapenos</label>
+               <input type="radio">
+               <input type="radio">
+               <input type="radio">
+               <input  type="radio">
+            </div>
             </div>
          </fieldset>
          <div>
-            <input type="submit" value="Add to your Order"
+            <input type="submit" value="Add to your Order">
          </div>
          </form>
    </section>
